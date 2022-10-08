@@ -7,7 +7,7 @@ import {
 export default async (request: Request, context: Context) => {
   const res = await context.next();
   console.log(res.headers);
-  if (res.headers.get('content-type') !== 'text/html') {
+  if (res.headers.get('content-type').match(/^text\/html/)) {
     return;
   }
 
