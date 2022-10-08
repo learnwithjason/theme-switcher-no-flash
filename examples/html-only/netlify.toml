@@ -1,0 +1,7 @@
+[build]
+  base = "examples/html-only"
+  publish = "src"
+
+[[edge_functions]]
+  path = "/*"
+  function = "color-theme"

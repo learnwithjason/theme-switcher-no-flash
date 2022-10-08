@@ -1,0 +1,10 @@
+{
+  "name": "html-only",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx ntl dev"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

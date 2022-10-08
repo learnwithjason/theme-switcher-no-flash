@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Theme Switcher With No Flash — HTML Only Example</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/" rel="home">CSS Theme Switcher Example</a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>A CSS theme Switcher with no flash</h1>
+      </section>
+
+      <aside>
+        <h2>Choose a Theme</h2>
+        <form>
+          <select title="Choose a theme" name="theme">
+            <option value="default">System Default</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="pink">Pink</option>
+          </select>
+          <button type="submit">Switch Theme</button>
+        </form>
+      </aside>
+
+      <section>
+        <p>
+          This site is an example of how a CSS-based color theme switcher can
+          work without any flash on first load.
+        </p>
+        <p>
+          It’s powered by
+          <a href="https://docs.netlify.com/edge-functions/overview/"
+            >Netlify Edge Functions</a
+          >, cookies, and plain ol’ CSS.
+          <strong>There is no client-side JavaScript in this example.</strong>
+        </p>
+      </section>
+
+      <!-- TODO build other examples
+        <aside>
+          <h2>Other Examples</h2>
+          <ul>
+            <li>
+              <a href="#">Next.js Color Theme Switcher</a>
+            </li>
+            <li>
+              <a href="#">Astro Color Theme Switcher</a>
+            </li>
+            <li>
+              <a href="#">React Color Theme Switcher</a>
+            </li>
+          </ul>
+        </aside>
+      -->
+    </main>
+
+    <footer>
+      <p>
+        built with <span role="img" aria-label="cheeseburger">🍔</span> by
+        <a href="https://jason.af/">Jason Lengstorf</a>
+      </p>
+
+      <nav>
+        <a href="https://github.com/learnwithjason/theme-switcher-no-flash"
+          >source code</a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>
