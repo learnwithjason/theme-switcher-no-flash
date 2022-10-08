@@ -5,6 +5,8 @@ import {
 } from 'https://ghuc.cc/worker-tools/html-rewriter/index.ts';
 
 export default async (request: Request, context: Context) => {
+  console.log('edge functions running');
+  console.log(request);
   const res = await context.next();
   if (res.headers.get('content-type') !== 'text/html') {
     return;
